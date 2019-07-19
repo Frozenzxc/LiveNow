@@ -1,0 +1,28 @@
+@mixin font($size, $height, $color: #000, $weight: 700) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin center {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@mixin container-mobile {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}

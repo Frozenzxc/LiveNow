@@ -1,0 +1,10 @@
+.inner-page {
+  @include center;
+}
+
+.inner-page__title {
+  @include font(27px, 30px);
+  padding: 73px 30px 73px 30px;
+  text-align: center;
+  background-color: #f1f1f1;
+}

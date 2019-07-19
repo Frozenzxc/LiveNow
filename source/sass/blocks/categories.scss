@@ -1,0 +1,91 @@
+.categories {
+  @include center;
+  padding-top: 70px;
+  background: url("../../img/hero-mobile@1x.jpg") no-repeat;
+  background-position: center -5px;
+}
+
+.categories__slogan {
+  @include container-mobile;
+  @include font(27px, 30px);
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.categories__list {
+  @include list-reset;
+}
+
+.categories__item {
+  @include font(19px, 24px, #ffffff);
+  position: relative;
+  cursor: pointer;
+
+  &:first-child {
+    background-color: $lightGreen;
+
+    &:hover,
+    &:focus {
+      background-color: #59d5bc;
+    }
+  }
+
+  &:last-child {
+    background-color: $darkGreen;
+
+    &:hover,
+    &:focus {
+      background-color: #46c1ae;
+    }
+  }
+}
+
+.categories__item:hover .categories__link,
+.categories__item:focus .categories__link {
+  padding-top: 23px;
+  padding-bottom: 38px;
+}
+
+.categories__item:hover .categories__icon,
+.categories__item:focus .categories__icon {
+  opacity: 0.7;
+}
+
+.categories__item:hover .categories__icon--interior,
+.categories__item:focus .categories__icon--interior {
+  top: 18px;
+}
+
+.categories__item:hover .categories__icon--toy,
+.categories__item:focus .categories__icon--toy {
+  top: 15px;
+}
+
+.categories__item:active .categories__link {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.categories__item:active .categories__icon {
+  opacity: 0.3;
+}
+
+.categories__link {
+  display: block;
+  padding: 28px 122px 28px 30px;
+  color: inherit;
+}
+
+.categories__icon {
+  position: absolute;
+  opacity: 0.5;
+}
+
+.categories__icon--interior {
+  top: 23px;
+  right: 36px;
+}
+
+.categories__icon--toy {
+  top: 20px;
+  right: 27px;
+}

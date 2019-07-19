@@ -1,0 +1,11 @@
+.params {
+  @include font(15px, 24px, #444444, 400);
+  margin-bottom: 28px;
+}
+
+.params__row {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+}

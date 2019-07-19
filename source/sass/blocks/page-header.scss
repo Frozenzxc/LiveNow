@@ -1,0 +1,12 @@
+.page-header {
+  @include center;
+  padding: 22px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__logo {
+  display: block;
+  margin: 0 auto;
+  width: 86px;
+  height: 35px;
+}

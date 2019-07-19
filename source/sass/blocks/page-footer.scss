@@ -1,0 +1,11 @@
+.page-footer {
+  @include center;
+  @include container-mobile;
+  background-color: #f1f1f1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.page-footer__social {
+  border-bottom: 1px solid #e5e5e5;
+}

@@ -1,0 +1,13 @@
+.site-search {
+  border-top: 1px solid #ececec;
+}
+
+.site-search__input {
+  font: inherit;
+  border: none;
+  padding: 27px 30px 27px 76px;
+
+  &::placeholder {
+    color: #000000;
+  }
+}
