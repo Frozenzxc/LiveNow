@@ -1,0 +1,23 @@
+.purchase-list {
+  @include list-reset;
+}
+
+.purchase-list__item {
+  cursor: pointer;
+  border-top: 1px solid #ececec;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.purchase-list__link {
+  display: block;
+  padding: 27px 30px 27px 76px;
+  color: inherit;
+}

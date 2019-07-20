@@ -1,0 +1,37 @@
+.catalog {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog__item-params {
+  @include font(13px, 30px, rgba(0, 0, 0, 1) ,400);
+}
+
+.catalog__item-price {
+  @include font(15px, 24px);
+}
+
+.catalog__basket {
+  display: block;
+  font-size: 0;
+  width: 20px;
+  height: 19px;
+  background: url("../../img/icon-cart.svg") no-repeat center;
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    background: url("../../img/icon-cart-hover.svg") no-repeat center;
+    opacity: 1;
+  }
+
+  &:active {
+    background: url("../../img/icon-cart-hover.svg") no-repeat center;
+    opacity: 0.3;
+  }
+}

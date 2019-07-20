@@ -1,0 +1,22 @@
+.social {
+  @include list-reset;
+  padding-bottom: 30px;
+}
+
+.social__link {
+  display: block;
+}
+
+.social__icon {
+  fill: #231f20;
+
+  &:hover,
+  &:focus {
+    fill: $lightGreen;
+  }
+
+  &:active {
+    fill: $lightGreen;
+    opacity: 0.3;
+  }
+}

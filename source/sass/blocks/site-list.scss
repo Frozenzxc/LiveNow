@@ -1,0 +1,23 @@
+.site-list {
+  @include list-reset;
+}
+
+.site-list__item {
+  cursor: pointer;
+  border-top: 1px solid #ececec;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.site-list__link {
+  display: block;
+  padding: 27px 30px 27px 76px;
+  color: inherit;
+}
