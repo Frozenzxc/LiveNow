@@ -1,6 +1,8 @@
 .advantages {
-  @include center;
-  @include container-mobile;
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 30px;
   margin-bottom: 60px;
 }

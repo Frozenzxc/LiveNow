@@ -1,13 +1,15 @@
 .categories {
-  @include center;
+  width: 320px;
+  margin: 0 auto;
   padding-top: 70px;
   background: url("../../img/hero-mobile@1x.jpg") no-repeat;
   background-position: center -5px;
 }
 
 .categories__slogan {
-  @include container-mobile;
   @include font(27px, 30px);
+  padding-left: 30px;
+  padding-right: 30px;
   text-align: center;
   margin-bottom: 120px;
 }
@@ -23,49 +25,28 @@
 
   &:first-child {
     background-color: $lightGreen;
-
+    /*
     &:hover,
     &:focus {
       background-color: #59d5bc;
-    }
+    }*/
   }
 
   &:last-child {
     background-color: $darkGreen;
-
+    /*
     &:hover,
     &:focus {
       background-color: #46c1ae;
-    }
+    }*/
   }
-}
-
-.categories__item:hover .categories__link,
-.categories__item:focus .categories__link {
-  padding-top: 23px;
-  padding-bottom: 38px;
-}
-
-.categories__item:hover .categories__icon,
-.categories__item:focus .categories__icon {
-  opacity: 0.7;
-}
-
-.categories__item:hover .categories__icon--interior,
-.categories__item:focus .categories__icon--interior {
-  top: 18px;
-}
-
-.categories__item:hover .categories__icon--toy,
-.categories__item:focus .categories__icon--toy {
-  top: 15px;
 }
 
 .categories__item:active .categories__link {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.categories__item:active .categories__icon {
+.categories__item:active .categories__link::after {
   opacity: 0.3;
 }
 
@@ -75,17 +56,22 @@
   color: inherit;
 }
 
-.categories__icon {
-  position: absolute;
+.categories__link--interior::after {
+  @include pseudo;
+  top: 23px;
+  right: 36px;
+  width: 40px;
+  height: 62px;
+  background: url("../../img/icon-interior.svg") no-repeat center;
   opacity: 0.5;
 }
 
-.categories__icon--interior {
-  top: 23px;
-  right: 36px;
-}
-
-.categories__icon--toy {
+.categories__link--toy::after {
+  @include pseudo;
   top: 20px;
   right: 27px;
+  width: 60px;
+  height: 60px;
+  background: url("../../img/icon-toy.svg") no-repeat center;
+  opacity: 0.5;
 }

@@ -1,5 +1,6 @@
 .page-header {
-  @include center;
+  width: 320px;
+  margin: 0 auto;
   padding: 22px 0;
   border-bottom: 1px solid #ececec;
 }

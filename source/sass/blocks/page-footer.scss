@@ -1,6 +1,8 @@
 .page-footer {
-  @include center;
-  @include container-mobile;
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: #f1f1f1;
   padding-top: 30px;
   padding-bottom: 30px;

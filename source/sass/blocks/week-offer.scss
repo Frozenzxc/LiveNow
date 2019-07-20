@@ -1,8 +1,7 @@
 .week-offer {
-  @include center;
-  @include container-mobile;
-  padding-top: 30px;
-  padding-bottom: 36px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 30px 30px 36px 30px;
   border-bottom: 6px solid transparent;
   border-image-source: url("../../img/bg-zigzag-line.svg");
   border-image-slice: 60;

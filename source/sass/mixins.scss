@@ -5,16 +5,6 @@
   color: $color;
 }
 
-@mixin center {
-  width: 320px;
-  margin: 0 auto;
-}
-
-@mixin container-mobile {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
 @mixin list-reset {
   list-style: none;
   padding: 0;

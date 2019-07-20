@@ -1,5 +1,6 @@
 .inner-page {
-  @include center;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .inner-page__title {
