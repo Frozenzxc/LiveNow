@@ -1,13 +1,18 @@
 .site-search {
-  border-top: 1px solid #ececec;
-}
-
-.site-search__input {
-  font: inherit;
-  border: none;
+  display: block;
   padding: 27px 30px 27px 76px;
+  color: rgba(0, 0, 0, 1);
+  border-top: 1px solid #ececec;
+  background-image: url("../../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 30px 32px;
 
-  &::placeholder {
-    color: #000000;
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
   }
 }

@@ -1,11 +1,14 @@
-.inner-page {
-  width: 320px;
-  margin: 0 auto;
-}
-
 .inner-page__title {
   @include font(27px, 30px);
   padding: 73px 30px 73px 30px;
   text-align: center;
   background-color: #f1f1f1;
+}
+
+@media (min-width: 768px) {
+  .inner-page__title {
+    margin-top: -80px;
+    font-size: 43px;
+    line-height: 50px;
+  }
 }

@@ -1,10 +1,9 @@
-.site-list {
+.sale-list {
   @include list-reset;
-  display: flex;
-  flex-direction: column;
+  display: none;
 }
 
-.site-list__item {
+.sale-list__item {
   cursor: pointer;
   border-top: 1px solid #ececec;
 
@@ -18,26 +17,20 @@
   }
 }
 
-.site-list__link {
+.sale-list__link {
   display: block;
   padding: 27px 30px 27px 76px;
   color: inherit;
 }
 
-@media (min-width: 768px) {
-  .site-list {
+@media (min-width: 1150px) {
+  .sale-list {
+    display: flex;
     flex-direction: row;
     font-size: 15px;
   }
 
-  .site-list__link {
+  .sale-list__link {
     padding-left: 50px;
-    padding-right: 5px;
-  }
-}
-
-@media (min-width: 1150px) {
-  .site-list {
-    font-size: 17px;
   }
 }

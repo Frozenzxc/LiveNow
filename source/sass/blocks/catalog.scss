@@ -1,4 +1,6 @@
 .catalog {
+  width: 320px;
+  margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 30px;
@@ -6,6 +8,15 @@
 
 .catalog__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.catalog__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .catalog__item-params {
@@ -17,6 +28,9 @@
 }
 
 .catalog__basket {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   display: block;
   font-size: 0;
   width: 20px;
@@ -33,5 +47,56 @@
   &:active {
     background: url("../../img/icon-cart-hover.svg") no-repeat center;
     opacity: 0.3;
+  }
+}
+
+@media (min-width: 768px) {
+  .catalog {
+    width: 768px;
+  }
+
+  .catalog__item {
+    padding-left: 334px;
+    min-height: 334px;
+    margin-bottom: 54px;
+  }
+
+  .catalog__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog {
+    width: 1150px;
+  }
+
+  .catalog__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    width: 316px;
+    padding-left: 0;
+    min-height: initial;
+  }
+
+  .catalog__item-title {
+    order: 2;
+  }
+
+  .catalog__item-params {
+    order: 3;
+  }
+
+  .catalog__item-price {
+    order: 4;
+  }
+
+  .catalog__link {
+    position: initial;
   }
 }
