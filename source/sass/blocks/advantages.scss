@@ -14,6 +14,9 @@
 
 .advantages__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .advantages__item {
@@ -54,4 +57,24 @@
 .advantages__item--gift {
   background: url("../../img/icon-feature-gift.svg") no-repeat;
   background-position: 3px 0;
+}
+
+@media (min-width: 768px) {
+  .advantages {
+    width: 768px;
+  }
+
+  .advantages__list {
+    max-height: 400px;
+  }
+
+  .advantages__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .advantages {
+    width: 1150px;
+  }
 }

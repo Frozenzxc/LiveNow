@@ -10,18 +10,28 @@
   display: block;
   min-height: 34px;
   font-size: 0;
-  background: url("../../img/logo-htmlacademy.svg") no-repeat;
+  background-image: url("../../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
   background-position: right;
 
   &:hover,
   &:focus {
-    background: url("../../img/logo-htmlacademy-hover.svg") no-repeat;
+    background-image: url("../../img/logo-htmlacademy-hover.svg");
+    background-repeat: no-repeat;
     background-position: right;
   }
 
   &:active {
-    background: url("../../img/logo-htmlacademy-hover.svg") no-repeat;
+    background-image: url("../../img/logo-htmlacademy-hover.svg");
+    background-repeat: no-repeat;
     background-position: right;
     opacity: 0.3;
+  }
+}
+
+@media (min-width: 768px) {
+  .copyright__link {
+    padding-right: 56px;
+    background-position-x: 156px;
   }
 }

@@ -1,6 +1,7 @@
 .social {
   @include list-reset;
   padding-bottom: 30px;
+  display: flex;
 }
 
 .social__link {
