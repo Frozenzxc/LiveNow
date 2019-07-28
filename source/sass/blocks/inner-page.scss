@@ -1,14 +1,26 @@
 .inner-page__title {
   @include font(27px, 30px);
-  padding: 73px 30px 73px 30px;
+  padding: 54px 30px 73px 30px;
   text-align: center;
   background-color: #f1f1f1;
 }
 
 @media (min-width: 768px) {
   .inner-page__title {
-    margin-top: -80px;
-    font-size: 43px;
-    line-height: 50px;
+    @include font(43px, 50px);
+    margin: 0;
+    padding: 26px 50px 68px 50px;
+    border-bottom: 18px solid transparent;
+    border-image-source: url("../../img/bg-zigzag-fill.svg");
+    border-image-slice: 60;
+    border-image-repeat: round;
+  }
+}
+
+@media (min-width: 1150px) {
+  .inner-page__title {
+    @include font(53px, 57px);
+    padding-bottom: 84px;
+    border-bottom: 32px solid transparent;
   }
 }

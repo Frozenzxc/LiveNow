@@ -5,10 +5,15 @@
 .purchase-list__item {
   cursor: pointer;
   border-top: 1px solid #ececec;
+  background-image: url("../../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 30px 32px;
+
 
   &:hover,
   &:focus {
-    opacity: 0.6;
+    color: rgba(0, 0, 0, 0.6);
+    background-image: url("../../img/icon-cart-hover.svg");
   }
 
   &:active {
@@ -20,4 +25,16 @@
   display: block;
   padding: 27px 30px 27px 76px;
   color: inherit;
+}
+
+@media (min-width: 768px) {
+  .purchase-list__item {
+    min-width: 264px;
+    border-top: none;
+    border-left: 1px solid #ececec;
+  }
+
+  .purchase-list__link {
+    padding: 32px 0 32px 83px;
+  }
 }

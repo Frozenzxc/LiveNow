@@ -5,12 +5,7 @@
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 26px 30px 30px 30px;
 }
 
 .page-footer__social {
@@ -25,20 +20,23 @@
   height: 34px;
 }
 
+.page-footer__copyright {
+  padding: 14px 40px 0 40px;
+}
+
 @media (min-width: 768px) {
   .page-footer__wrapper {
-    width: 768px;
+    padding: 36px 50px 30px 50px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   .page-footer__logo {
     display: block;
   }
-}
 
-@media (min-width: 1150px) {
-  .page-footer__wrapper {
-    width: 1150px;
+  .page-footer__copyright {
+    padding-right: 0;
   }
 }

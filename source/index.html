@@ -9,11 +9,12 @@
   </head>
   <body>
     <header class="page-header">
+      <div class="page-header__wrapper container">
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка - интернет-магазин игрушек ручной работы">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -41,27 +42,30 @@
           <p class="main-nav__delivery">Бесплатная доставка по России</p>
         </div>
       </nav>
+      </div>
     </header>
     <main class="page-main">
 
       <h1 class="visually-hidden">Мишка - интернет-магазин игрушек ручной работы</h1>
 
       <section class="categories">
-      <h2 class="categories__slogan">Милые штуки ручной работы для дома</h2>
-        <ul class="categories__list">
-          <li class="categories__item">
-            <a class="categories__link categories__link--interior" href="#">
+        <div class="categories__wrapper container">
+          <h2 class="categories__slogan">Милые штуки ручной работы для дома</h2>
+            <ul class="categories__list">
+              <li class="categories__item">
+                <a class="categories__link categories__link--interior" href="#">
               Предметы интерьера
-            </a>
-          </li>
-          <li class="categories__item">
-            <a class="categories__link categories__link--toy" href="#">
+                </a>
+              </li>
+              <li class="categories__item">
+                <a class="categories__link categories__link--toy" href="#">
               Детские игрушки
-            </a>
-          </li>
-        </ul>
+                </a>
+                </li>
+              </ul>
+        </div>
       </section>
-      <section class="week-offer">
+      <section class="week-offer container">
         <h2 class="visually-hidden">Товары недели</h2>
         <h3 class="week-offer__title">Вязанные корзинки</h3>
         <b class="week-offer__promo">Товар недели</b>
@@ -71,15 +75,15 @@
         </p>
         <table class="week-offer__params params">
           <tr class="params__row">
-            <td class="params__field">Цвет:</td>
+            <th class="params__field">Цвет:</th>
             <td class="params__value">«Тиффани»/серый</td>
           </tr>
           <tr class="params__row">
-            <td class="params__field">Диаметр:</td>
+            <th class="params__field">Диаметр:</th>
             <td class="params__value">25см</td>
           </tr>
           <tr class="params__row">
-            <td class="params__field">Высота:</td>
+            <th class="params__field">Высота:</th>
             <td class="params__value">15см</td>
           </tr>
         </table>
@@ -90,7 +94,7 @@
         <a class="week-offer__purchase button" href="#">Заказать</a>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages container">
         <h2 class="advantages__title">Коротко о нас:</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--flower">Экологически чистые материалы</li>
@@ -103,7 +107,7 @@
       </section>
     </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper container">
     <a class="page-footer__logo">
       <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Мишка - интернет-магазин игрушек ручной работы">
     </a>
@@ -158,5 +162,6 @@
     </div>
     </div>
   </footer>
+  <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>

@@ -1,7 +1,10 @@
 .social {
   @include list-reset;
-  padding-bottom: 30px;
+  padding-bottom: 18px;
+  padding-right: 36px;
+  padding-left: 32px;
   display: flex;
+  justify-content: space-around;
 }
 
 .social__link {
@@ -19,5 +22,14 @@
   &:active {
     fill: $lightGreen;
     opacity: 0.3;
+  }
+}
+
+@media (min-width: 768px) {
+  .social {
+    min-width: 148px;
+    margin-left: 126px;
+    padding: 26px 0 0 0;
+    justify-content: space-between;
   }
 }

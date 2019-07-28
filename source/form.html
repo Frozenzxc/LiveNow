@@ -9,41 +9,43 @@
   </head>
   <body>
     <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка - интернет-магазин игрушек ручной работы">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
+    <div class="page-header__wrapper container">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка - интернет-магазин игрушек ручной работы">
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Вязание на заказ</a>
-        </li>
-      </ul>
-      <a class="main-nav__search site-search" href="#">Поиск по сайту</a>
-      <ul class="main-nav__purchase-list purchase-list">
-        <li class="purchase-list__item">
-          <a class="purchase-list__link" href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__sale-list sale-list">
-          <li class="sale-list__item">
-            <a class="sale-list__link" href="#">Новые поступления</a>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="sale-list__item">
-            <a class="sale-list__link" href="#">Распродажа</a>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <p class="main-nav__delivery">Бесплатная доставка по России</p>
-      </div>
-    </nav>
+        <a class="main-nav__search site-search" href="#">Поиск по сайту</a>
+        <ul class="main-nav__purchase-list purchase-list">
+          <li class="purchase-list__item">
+            <a class="purchase-list__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__sale-list sale-list">
+            <li class="sale-list__item">
+              <a class="sale-list__link" href="#">Новые поступления</a>
+            </li>
+            <li class="sale-list__item">
+              <a class="sale-list__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <p class="main-nav__delivery">Бесплатная доставка по России</p>
+        </div>
+      </nav>
+    </div>
   </header>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper container">
         <a class="page-footer__logo">
           <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Мишка - интернет-магазин игрушек ручной работы">
         </a>
@@ -98,5 +100,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>
