@@ -1,11 +1,35 @@
 .params {
   @include font(15px, 24px, #444444, 400);
-  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
 }
 
 .params__row {
   display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 100%;
+  padding-bottom: 6px;
+  margin-bottom: 4px;
   border-bottom: 1px solid #ececec;
+}
+
+.params__field {
+  text-align: left;
+  font: inherit;
+  min-width: 98px;
+}
+
+@media (min-width: 768px) {
+  .params__row {
+    padding-bottom: 5px;
+  }
+
+  .params__field {
+    min-width: 95px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .params__row {
+    padding-bottom: 7px;
+  }
 }

@@ -36,3 +36,21 @@ img {
   height: 1px;
   margin: -1px;
 }
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .container {
+    width: 1150px;
+  }
+}

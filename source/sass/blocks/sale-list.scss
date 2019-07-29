@@ -30,7 +30,15 @@
     font-size: 15px;
   }
 
+  .sale-list__item {
+    border: none;
+
+    &:first-child {
+      margin-right: 61px;
+    }
+  }
+
   .sale-list__link {
-    padding-left: 50px;
+    padding: 18px 0 27px 0;
   }
 }

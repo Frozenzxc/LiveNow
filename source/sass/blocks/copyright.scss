@@ -1,18 +1,18 @@
-.copyright {
-  padding: 26px 40px 0 40px;
-}
-
 .copyright__text {
   @include font(19px, 18px);
+  vertical-align: middle;
 }
 
 .copyright__link {
   display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
   min-height: 34px;
   font-size: 0;
   background-image: url("../../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position-x: right;
+  background-position-y: 8px;
 
   &:hover,
   &:focus {

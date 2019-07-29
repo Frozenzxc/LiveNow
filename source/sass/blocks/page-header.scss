@@ -1,7 +1,5 @@
-.page-header {
+.page-header__wrapper {
   position: relative;
-  width: 320px;
-  margin: 0 auto;
   border-bottom: 1px solid #ececec;
   display: flex;
   flex-direction: column;
@@ -16,11 +14,27 @@
   text-align: center;
   width: 86px;
   height: 35px;
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {
   .page-header {
-    width: 768px;
+    background-image: linear-gradient(to bottom, #ffffff 88px, #ececec 88px, #ececec 89px, #f9f9f9 89px);
+  }
+
+  .page-header--inner {
+    background-image: linear-gradient(to bottom, #ffffff 88px, #ececec 88px, #ececec 89px, #f1f1f1 89px);
+  }
+
+  .page-header__wrapper {
     flex-direction: row;
     align-items: flex-start;
     border: none;
@@ -34,13 +48,9 @@
 }
 
 @media (min-width: 1150px) {
-  .page-header {
-    width: 1150px;
-  }
-
   .page-header__logo {
     position: absolute;
     top: 6px;
-    left: 500px;
+    left: 530px;
   }
 }
