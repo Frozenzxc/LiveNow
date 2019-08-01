@@ -35,6 +35,8 @@
 .week-offer__link {
   display: block;
   margin-bottom: 15px;
+  width: 100%;
+  height: auto;
 }
 
 .week-offer__price {
@@ -81,6 +83,8 @@
     position: absolute;
     top: 0;
     right: 0;
+    width: 333px;
+    margin-bottom: 0;
   }
 
   .week-offer__desc {
@@ -96,7 +100,7 @@
     @include font(20px, 24px);
     text-align: center;
     padding-right: 14px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 }
 
@@ -130,5 +134,11 @@
 
   .week-offer__params {
     margin-bottom: 102px;
+  }
+
+  .week-offer__link {
+    z-index: -1;
+    top: -164px;
+    width: 525px;
   }
 }
