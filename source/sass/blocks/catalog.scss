@@ -33,19 +33,21 @@
   @include font(13px, 30px, rgba(0, 0, 0, 1) ,400);
   margin: 0;
   padding-bottom: 18px;
-  border-bottom: 1px solid #ececec;
 }
 
 .catalog__item-price {
   @include font(15px, 24px);
   padding-top: 22px;
   padding-bottom: 26px;
+  border-top: 1px solid #ececec;
 }
 
 .catalog__link {
   position: absolute;
   left: 0;
   top: -195px;
+  width: 100%;
+  height: auto;
 }
 
 .catalog__basket {
@@ -91,12 +93,22 @@
 
   .catalog__item-params {
     @include font(15px, 30px, #000000, 400);
-    padding-bottom: 174px;
   }
 
   .catalog__item-price {
     @include font(17px, 24px);
+    margin-top: auto;
     padding-left: 6px;
+    border-top: none;
+
+    &::before {
+      @include pseudo;
+      bottom: 72px;
+      left: 366px;
+      width: 268px;
+      height: 1px;
+      background-color: #ececec;
+    }
   }
 
   .catalog__basket {
@@ -108,6 +120,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: 334px;
   }
 }
 
@@ -123,28 +136,36 @@
 
   .catalog__item {
     width: 316px;
-    padding-left: 28px;
     min-height: initial;
+    padding-left: 0;
   }
 
   .catalog__item-title {
     order: 2;
     margin-bottom: 4px;
+    padding-left: 28px;
   }
 
   .catalog__item-params {
     order: 3;
-    padding-bottom: 40px;
+    padding-bottom: 15px;
+    padding-left: 28px;
   }
 
   .catalog__item-price {
     order: 4;
-    padding-left: 0;
-    padding-bottom: 0;
+    padding-left: 28px;
+
+    &::before {
+      @include pseudo;
+      bottom: 72px;
+      left: 28px;
+      width: 256px;
+    }
   }
 
   .catalog__link {
     position: initial;
-    min-height: 462px;
+    width: 316px;
   }
 }
