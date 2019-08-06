@@ -50,20 +50,10 @@
 
   &:first-child {
     background-color: $lightGreen;
-    /*
-    &:hover,
-    &:focus {
-      background-color: #59d5bc;
-    }*/
   }
 
   &:last-child {
     background-color: $darkGreen;
-    /*
-    &:hover,
-    &:focus {
-      background-color: #46c1ae;
-    }*/
   }
 }
 
@@ -126,12 +116,18 @@
   .categories__list {
     width: 100%;
     flex-direction: row;
+    background-image: linear-gradient(to right, $lightGreen 50%, $darkGreen 50%);
   }
 
   .categories__item {
     width: 50%;
     font-size: 20px;
     line-height: 30px;
+
+    &:hover,
+    &:focus {
+      transform: translateY(-5px);
+    }
   }
 
   .categories__link {
