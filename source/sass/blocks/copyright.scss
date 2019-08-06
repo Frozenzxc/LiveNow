@@ -4,29 +4,28 @@
 }
 
 .copyright__link {
+  position: relative;
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
   min-height: 34px;
   font-size: 0;
-  background-image: url("../../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: 8px;
-
-  &:hover,
-  &:focus {
-    background-image: url("../../img/logo-htmlacademy-hover.svg");
-    background-repeat: no-repeat;
-    background-position: right;
-  }
 
   &:active {
-    background-image: url("../../img/logo-htmlacademy-hover.svg");
-    background-repeat: no-repeat;
-    background-position: right;
     opacity: 0.3;
   }
+}
+
+.copyright__icon {
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  fill: $lightGreen;
+}
+
+.copyright__link:hover .copyright__icon,
+.copyright__link:focus .copyright__icon {
+  fill: $darkGreen;
 }
 
 @media (min-width: 768px) {

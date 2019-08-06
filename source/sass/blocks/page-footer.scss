@@ -32,8 +32,21 @@
     align-items: center;
   }
 
+  .page-footer__social {
+    border: none;
+  }
+
   .page-footer__logo {
     display: block;
+  }
+
+  .page-footer__logo:hover .page-footer__logo-image,
+  .page-footer__logo:focus .page-footer__logo-image {
+    fill: $darkGreen;
+  }
+
+  .page-footer__logo:active .page-footer__logo-image {
+    opacity: 0.3;
   }
 
   .page-footer__copyright {
