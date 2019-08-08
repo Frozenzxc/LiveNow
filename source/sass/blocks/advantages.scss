@@ -2,7 +2,6 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 6px;
-  margin-bottom: 60px;
 }
 
 .advantages__title {
@@ -89,5 +88,6 @@
 
   .advantages__title {
     @include font(53px, 57px);
+    margin-top: 45px;
   }
 }
