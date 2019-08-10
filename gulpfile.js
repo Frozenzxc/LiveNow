@@ -46,12 +46,16 @@ gulp.task("images", function () {
     .pipe(gulp.dest("build/img"));
 });*/
 
+/*.pipe(posthtml([
+include()
+]))*/
+
 gulp.task("html", function () {
- return gulp.src("source/*.html")
- /*.pipe(posthtml([
- include()
- ]))*/
- .pipe(gulp.dest("build"));
+  return gulp.src("source/*.html")
+  /*.pipe(posthtml([
+      include()
+    ]))*/
+  .pipe(gulp.dest("build"));
 });
 
 
