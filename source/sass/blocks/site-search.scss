@@ -1,21 +1,25 @@
 .site-search {
+  position: relative;
   display: block;
   padding: 27px 30px 27px 76px;
   color: rgba(0, 0, 0, 1);
   border-top: 1px solid #ececec;
-  background-image: url("../../img/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 30px 32px;
+}
 
-  &:hover,
-  &:focus {
-    color: rgba(0, 0, 0, 0.6);
-    background-image: url("../../img/icon-search-hover.svg");
-  }
+.site-search-icon {
+  position: absolute;
+  top: 32px;
+  left: 31px;
+  fill: rgba(0, 0, 0, 0.2);
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.site-search:hover .site-search-icon,
+.site-search:focus .site-search-icon {
+  fill: $lightGreen;
+}
+
+.site-search:active .site-search-icon {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
