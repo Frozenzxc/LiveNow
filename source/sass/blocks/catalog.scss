@@ -58,17 +58,17 @@
   font-size: 0;
   width: 20px;
   height: 19px;
-  background: url("../../img/icon-cart.svg") no-repeat center;
+  background: url("../img/icon-cart.svg") no-repeat center;
   opacity: 0.2;
 
   &:hover,
   &:focus {
-    background: url("../../img/icon-cart-hover.svg") no-repeat center;
+    background: url("../img/icon-cart-hover.svg") no-repeat center;
     opacity: 1;
   }
 
   &:active {
-    background: url("../../img/icon-cart-hover.svg") no-repeat center;
+    background: url("../img/icon-cart-hover.svg") no-repeat center;
     opacity: 0.3;
   }
 }
