@@ -20,6 +20,19 @@
   flex-direction: column;
   position: relative;
   box-shadow: inset 0 0 0 1px #ececec;
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 0 0 1px #ececec,
+    0 -210px 0 16px rgba(255, 255, 255, 1),
+    0 7px 11px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 1px #ececec,
+    0 -210px 0 16px rgba(255, 255, 255, 1),
+    0 5px 11px -2px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .catalog__item-title {
@@ -52,25 +65,28 @@
 
 .catalog__basket {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 32px;
+  right: 27px;
   display: block;
   font-size: 0;
   width: 20px;
   height: 19px;
-  background: url("../img/icon-cart.svg") no-repeat center;
+}
+
+.catalog__basket-icon {
+  fill: #000000;
   opacity: 0.2;
+}
 
-  &:hover,
-  &:focus {
-    background: url("../img/icon-cart-hover.svg") no-repeat center;
-    opacity: 1;
-  }
+.catalog__basket:hover .catalog__basket-icon,
+.catalog__basket:focus .catalog__basket-icon {
+  fill: $lightGreen;
+  opacity: 1;
+}
 
-  &:active {
-    background: url("../img/icon-cart-hover.svg") no-repeat center;
-    opacity: 0.3;
-  }
+.catalog__basket:active .catalog__basket-icon {
+  fill: $lightGreen;
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
@@ -132,12 +148,14 @@
   .catalog__list {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 58px;
   }
 
   .catalog__item {
     width: 316px;
     min-height: initial;
     padding-left: 0;
+    margin-bottom: 0;
   }
 
   .catalog__item-title {

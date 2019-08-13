@@ -79,7 +79,11 @@
             </a>
             <p class="catalog__item-params">Рост 30 см, вес 200 г</p>
             <span class="catalog__item-price">1 200 руб.</span>
-            <a class="catalog__basket" href="#">Добавить в корзину</a>
+            <a class="catalog__basket" href="#">Добавить в корзину
+              <svg class="catalog__basket-icon" width="20px" height="19px">
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </a>
           </li>
           <li class="catalog__item">
             <h3 class="catalog__item-title">Корзинка для белья</h3>
@@ -96,7 +100,11 @@
             </a>
             <p class="catalog__item-params">Диаметр 15 см, высота 10 см</p>
             <span class="catalog__item-price">690 руб.</span>
-            <a class="catalog__basket" href="#">Добавить в корзину</a>
+            <a class="catalog__basket" href="#">Добавить в корзину
+              <svg class="catalog__basket-icon" width="20px" height="19px">
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </a>
           </li>
           <li class="catalog__item">
             <h3 class="catalog__item-title">Большая корзинка для игрушек</h3>
@@ -113,11 +121,38 @@
             </a>
             <p class="catalog__item-params">Диаметр 30 см, высота 30 см</p>
             <span class="catalog__item-price">1 500 руб.</span>
-            <a class="catalog__basket" href="#">Добавить в корзину</a>
+            <a class="catalog__basket" href="#">Добавить в корзину
+              <svg class="catalog__basket-icon" width="20px" height="19px">
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </section>
+      <section class="production container">
+        <div class="production__wrapper">
+        <h2 class="production__title">Процесс производства
+          <svg class="production__title-icon">
+            <use xlink:href="#icon-video"></use>
+          </svg>
+        </h2>
+        <video class="production__video">
+          <source src="#">
+        </video>
+        <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
 
+          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img class="production__poster" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
+        </picture>
+        <button class="production__play-btn" type="button">Воспроизвести</button>
+        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="production__order-btn button" href="#">Сделать заказ</a>
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
