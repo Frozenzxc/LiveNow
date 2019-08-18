@@ -43,6 +43,7 @@
 .contacts__email {
   border-bottom: 1px solid $lightGreen;
   cursor: pointer;
+  color: #000000;
 
   &:hover,
   &focus {
@@ -59,13 +60,37 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 310px;
+  top: 0;
   cursor: pointer;
+}
+
+.contacts__map {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 310px;
+  width: 100%;
+  min-height: 457px;
+  border: none;
 }
 
 .contacts__map-image {
   width: 100%;
   min-height: 457px;
+  z-index: 8;
+}
+
+.contacts__map-pin {
+  position: absolute;
+  top: calc(50% - 84px);
+  left: calc(50% - 20px);
+  display: block;
+  width: 66px;
+  height: 101px;
+  background-image: url("../img/icon-map-pin.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: 768px) {
@@ -110,8 +135,9 @@
     align-self: center;
   }
 
-  .contacts__map-link {
+  .contacts__map {
     top: 303px;
+    max-height: 457px;
   }
 }
 
@@ -148,8 +174,15 @@
     align-self: flex-start;
   }
 
-  .contacts__map-link {
+  .contacts__map {
     position: initial;
     width: 50%;
+  }
+
+  .contacts__map-link {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    width: 525px;
   }
 }
