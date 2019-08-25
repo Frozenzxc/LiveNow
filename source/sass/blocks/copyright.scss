@@ -33,4 +33,14 @@
     padding-right: 56px;
     background-position-x: 156px;
   }
+
+  .copyright__icon {
+    bottom: -3px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .copyright__link {
+    padding-top: 0;
+  }
 }

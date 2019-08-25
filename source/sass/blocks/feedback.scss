@@ -87,7 +87,7 @@
     position: relative;
     flex-direction: row;
     align-items: center;
-    padding: 103px 50px 85px 50px;
+    padding: 106px 50px 85px 50px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position-x: left;
@@ -125,6 +125,7 @@
   }
 
   .feedback__text {
+    width: 668px;
     font-size: 17px;
     margin-bottom: 60px;
   }
@@ -149,7 +150,7 @@
     padding-bottom: 134px;
     border-bottom: 20px solid transparent;
     background-position-x: 51px;
-    background-position-y: 36px;
+    background-position-y: 35px;
   }
 
   .feedback__title {
@@ -157,7 +158,9 @@
   }
 
   .feedback__text {
-    margin-bottom: 42px;
+    width: 875px;
+    margin-bottom: 38px;
+    padding-right: 105px;
   }
 
   .feedback__text br {

@@ -13,29 +13,32 @@ menuBtn.addEventListener('click', function() {
     }
 });
 
-var modalBlock = document.querySelector("#modal");
-var modalOverlay = document.querySelector("#modal__overlay");
-var modalOpenButton = document.querySelector(".modal__open-btn");
+var modalBlock = document.querySelector('#modal');
+var modalOverlay = document.querySelector('#modal__overlay');
+var modalOpenButton = document.querySelectorAll('.modal__open-btn');
 
 var modal = function(modalObj, modalOverlay) {
-  modalObj.classList.toggle("modal--close");
-  modalOverlay.classList.toggle("modal--close");
+  modalObj.classList.toggle('modal--close');
+  modalOverlay.classList.toggle('modal--close');
 };
 
-modalOpenButton.addEventListener("click", function(evt) {
+for (var i = 0; i < modalOpenButton.length; i++) {
+  modalOpenButton[i].addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modal(modalBlock, modalOverlay);
+  });
+
+}
+
+modalOverlay.addEventListener('click', function (evt) {
   evt.preventDefault();
   modal(modalBlock, modalOverlay);
 });
 
-modalOverlay.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modal(modalBlock, modalOverlay);
-});
-
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (!modalBlock.classList.contains("modal-close")) {
+    if (!modalBlock.classList.contains('modal-close')) {
       modal(modalBlock, modalOverlay);
     }
   }
@@ -45,7 +48,7 @@ ymaps.ready(function (){
 
   var myMap;
 
-  myMap = new ymaps.Map("map", {
+  myMap = new ymaps.Map('map', {
     center: [59.938631, 30.323055],
     zoom: 17,
     controls: []
@@ -53,7 +56,7 @@ ymaps.ready(function (){
 
   myMap.behaviors.disable('scrollZoom');
 
-  myMap.controls.add("zoomControl", {
+  myMap.controls.add('zoomControl', {
     position: {top: 15, left: 15}
   });
 

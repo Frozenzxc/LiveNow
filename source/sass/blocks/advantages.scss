@@ -38,7 +38,7 @@
 
 .advantages__item--heart {
   background: url("../img/icon-feature-heart.svg") no-repeat;
-  background-position: 7px 0;
+  background-position: 7px 4px;
 }
 
 .advantages__item--ball {
@@ -61,6 +61,7 @@
     padding-top: 17px;
     padding-left: 50px;
     padding-right: 50px;
+    margin-bottom: 55px;
   }
 
   .advantages__title {
@@ -69,7 +70,7 @@
   }
 
   .advantages__list {
-    height: 500px;
+    flex-direction: row;
   }
 
   .advantages__item {
@@ -77,6 +78,32 @@
     padding-right: 40px;
     width: 50%;
     margin-bottom: 58px;
+  }
+
+  .advantages__item--flower {
+    order: 1;
+  }
+
+  .advantages__item--money {
+    order: 3;
+  }
+
+  .advantages__item--ball {
+    order: 2;
+  }
+
+  .advantages__item--rocket {
+    order: 4;
+  }
+
+  .advantages__item--heart {
+    order: 5;
+    margin-bottom: 0;
+  }
+
+  .advantages__item--gift {
+    order: 6;
+    margin-bottom: 0;
   }
 }
 

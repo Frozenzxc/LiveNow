@@ -22,7 +22,7 @@
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка - интернет-магазин игрушек ручной работы">
         </picture>
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
         <ul class="main-nav__list site-list">
@@ -202,6 +202,28 @@
         </div>
       </div>
     </footer>
+    <section class="modal modal--show modal--close" id="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <form id="modal__form" class="modal__form" name="modal__form" method="get" action="https://echo.htmlacademy.ru">
+        <h3 class="modal__form--title">Выберите размер:</h3>
+        <div class="modal__wrapper">
+          <input type="radio" id="modal__input-size--s" class="modal__input-size visually-hidden" name="modal__form-size" form="modal__form" checked>
+          <label class="modal__size-label" for="modal__input-size--s">
+            S
+          </label>
+          <input type="radio" id="modal__input-size--m" class="modal__input-size visually-hidden" name="modal__form-size" form="modal__form">
+          <label class="modal__size-label" for="modal__input-size--m">
+            M
+          </label>
+          <input type="radio" id="modal__input-size--l" class="modal__input-size visually-hidden" name="modal__form-size" form="modal__form">
+          <label class="modal__size-label" for="modal__input-size--l">
+            L
+          </label>
+        </div>
+        <button class="modal__submit" type="submit">Добавить</button>
+      </form>
+    </section>
+    <div class="modal__overlay modal--close" id="modal__overlay"></div>
     <script src="js/picturefill.min.js"></script>
     <script src="js/script.js"></script>
   </body>

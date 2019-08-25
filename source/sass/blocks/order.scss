@@ -79,8 +79,8 @@
   display: block;
 }
 
-.order__type-label:hover .order__custom-radio,
-.order__type-label:focus .order__custom-radio {
+.order__type:hover + .order__type-label .order__custom-radio,
+.order__type:focus + .order__type-label .order__custom-radio {
   border-color: #62d1ba;
 }
 
@@ -124,8 +124,8 @@
   display: block;
 }
 
-.order__color-label:hover .order__custom-checkbox,
-.order__color-label:focus .order__custom-checkbox {
+.order__color:hover + .order__color-label .order__custom-checkbox,
+.order__color:focus + .order__color-label .order__custom-checkbox {
   border-color: #62d1ba;
 }
 

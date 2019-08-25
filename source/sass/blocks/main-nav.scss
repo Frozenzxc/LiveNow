@@ -11,8 +11,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 1px;
+  right: 11px;
   display: block;
   width: 80px;
   height: 80px;
@@ -29,7 +29,7 @@
   width: 20px;
   height: 2px;
   background-color: #000000;
-  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  box-shadow: 0 7px 0 0 #000000, 0 13px 0 0 #000000;
 }
 
 .main-nav--opened .main-nav__toggle {
