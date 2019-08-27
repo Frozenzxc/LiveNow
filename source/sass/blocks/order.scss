@@ -15,7 +15,7 @@
 
 .order__intro {
   @include font(13px, 24px, #000, 400);
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 23px;
   padding: 0 30px;
 }
@@ -286,6 +286,7 @@
 
 .order__cover-letter {
   @include font(19px, 18px, #000, 400);
+  font-family: inherit;
   width: 100%;
   padding: 15px 15px 17px;
   border: 2px solid #000000;
