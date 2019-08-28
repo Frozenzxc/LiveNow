@@ -14,12 +14,12 @@ menuBtn.addEventListener('click', function() {
 });
 
 var modalBlock = document.querySelector('#modal');
-var modalOverlay = document.querySelector('#modal__overlay');
-var modalOpenButton = document.querySelectorAll('.modal__open-btn');
+var modalOverlay = document.querySelector('#modal-overlay');
+var modalOpenButton = document.querySelectorAll('.modal-open');
 
 var modal = function(modalObj, modalOverlay) {
-  modalObj.classList.toggle('modal--close');
-  modalOverlay.classList.toggle('modal--close');
+  modalObj.classList.toggle('modal-close');
+  modalOverlay.classList.toggle('modal-close');
 };
 
 for (var i = 0; i < modalOpenButton.length; i++) {

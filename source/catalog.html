@@ -80,7 +80,7 @@
             </a>
             <p class="catalog__item-params">Рост 30 см, вес 200 г</p>
             <span class="catalog__item-price">1 200 руб.</span>
-            <a class="catalog__basket modal__open-btn" href="catalog-rabbit.html">Добавить в корзину
+            <a class="catalog__basket modal-open" href="catalog-rabbit.html">Добавить в корзину
               <svg class="catalog__basket-icon" width="20px" height="19px">
                 <use xlink:href="#icon-cart"></use>
               </svg>
@@ -101,7 +101,7 @@
             </a>
             <p class="catalog__item-params">Диаметр 15 см, высота 10 см</p>
             <span class="catalog__item-price">690 руб.</span>
-            <a class="catalog__basket modal__open-btn" href="catalog-basket.html">Добавить в корзину
+            <a class="catalog__basket modal-open" href="catalog-basket.html">Добавить в корзину
               <svg class="catalog__basket-icon" width="20px" height="19px">
                 <use xlink:href="#icon-cart"></use>
               </svg>
@@ -122,7 +122,7 @@
             </a>
             <p class="catalog__item-params">Диаметр 30 см, высота 30 см</p>
             <span class="catalog__item-price">1 500 руб.</span>
-            <a class="catalog__basket modal__open-btn" href="catalog-toy.html">Добавить в корзину
+            <a class="catalog__basket modal-open" href="catalog-toy.html">Добавить в корзину
               <svg class="catalog__basket-icon" width="20px" height="19px">
                 <use xlink:href="#icon-cart"></use>
               </svg>
@@ -202,10 +202,10 @@
         </div>
       </div>
     </footer>
-    <section class="modal modal--show modal--close" id="modal">
+    <section class="modal modal-show modal-close" id="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
       <form id="modal__form" class="modal__form" name="modal__form" method="get" action="https://echo.htmlacademy.ru">
-        <h3 class="modal__form--title">Выберите размер:</h3>
+        <h3 class="modal__form-title">Выберите размер:</h3>
         <div class="modal__wrapper">
           <input type="radio" id="modal__input-size--s" class="modal__input-size visually-hidden" name="modal__form-size" form="modal__form" checked>
           <label class="modal__size-label" for="modal__input-size--s">
@@ -223,7 +223,7 @@
         <button class="modal__submit" type="submit">Добавить</button>
       </form>
     </section>
-    <div class="modal__overlay modal--close" id="modal__overlay"></div>
+    <div class="modal-overlay modal-close" id="modal-overlay"></div>
     <script src="js/picturefill.min.js"></script>
     <script src="js/script.js"></script>
   </body>
