@@ -322,6 +322,177 @@ img {
   .purchase-list__link {
     padding: 32px 0 32px 83px; } }
 */
+.preview__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.preview__text {
+  margin-left: auto;
+}
+
+.advantages__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  
+}
+
+.work-examples__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-examples__preview-wrapper {
+  width: 40%;
+}
+
+.work-examples__text {
+}
+
+.work-examples__owner {
+  width: 60%;
+}
+
+.work-examples__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+}
+
+.clients__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.clients__info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.clients__logo {
+  order: 1;
+  width: 50%
+}
+
+.clients__contacts {
+  order: 2;
+  margin-left: auto;
+  width: 50%
+}
+
+.clients__title {
+  order: 3;
+  width: 50%
+}
+
+.clients__text {
+  order: 4;
+  margin-left: auto;
+  width: 50%
+}
+
+.social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 18px;
+  padding-right: 36px;
+  padding-left: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.social__link {
+  display: block; }
+
+.social__icon {
+  fill: #231f20; }
+  .social__icon:hover, .social__icon:focus {
+    fill: #63d1bb; }
+  .social__icon:active {
+    fill: #63d1bb;
+    opacity: 0.3; }
+
+.production {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.production__wrapper {
+  width: 20%;
+}
+
+.production__poster {
+  display: none;
+}
+
+.production__play-btn {
+  display: none;
+}
+
+.production__video {
+  width: 30%;
+}
+
+.production__info-wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.production__features {
+  width: 40%;
+}
+
+production__features-photo {
+  width: 40%;
+}
+
+.production__performers-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  height: 100%;
+}
+
+.performers__wrapper {
+  position: relative;
+}
+
+.performers__list {
+    list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.performers__photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 1000px;
+  height: 740px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
 /*# sourceMappingURL=style.css.map */
