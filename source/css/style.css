@@ -1,12 +1,30 @@
 @font-face {
   font-family: "Stolzl";
-  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/Stolzl-Light.woff2") format("woff2"), url("../fonts/Stolzl-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+/*@font-face {
+  font-family: "Stolzl";
+  src: url("../fonts/Stolzl-Regular.woff2") format("woff2"), url("../fonts/Stolzl-Regular.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }*/
+
+@font-face {
+  font-family: "Stolzl";
+  src: url("../fonts/Stolzl-Bold.woff2") format("woff2"), url("../fonts/Stolzl-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Jura";
+  src: url("../fonts/Jura-Regular.woff2") format("woff2"), url("../fonts/Jura-Regular.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  font-family: "Jura";
+  src: url("../fonts/Jura-Bold.woff2") format("woff2"), url("../fonts/Jura-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
 
@@ -124,7 +142,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; 
+      flex-wrap: wrap;
 width: 100%;
 }
 
@@ -263,7 +281,7 @@ width: 100%;
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-  
+
   font-size: 19px;
 line-height: 23px;
   text-transform: lowercase;
@@ -367,7 +385,7 @@ line-height: 23px;
   margin-left: auto;
   transform: rotate(270deg);
   width: 120px;
- 
+
 font-family: Jura;
 font-style: normal;
 font-weight: normal;
@@ -383,14 +401,14 @@ font-style: normal;
 font-weight: bold;
 font-size: 125px;
 line-height: 73px;
-  
+
 }
 
 .preview__video {
   max-width: 612px;
     margin-left: auto;
   padding: 20px;
-  background-color: rgba(255, 0, 0, 0.6); 
+  background-color: rgba(255, 0, 0, 0.6);
 }
 
 .preview__video-text {
@@ -418,7 +436,7 @@ line-height: 23px;
 
 .advantages__title {
   width: 22%;
-  
+
 font-size: 36px;
 line-height: 43px;
 text-transform: lowercase;
@@ -464,10 +482,11 @@ text-transform: lowercase;
 }
 
 .work-examples__title {
+  font-family: "Jura", "Arial", sans-serif;
   font-weight: 700;
 font-size: 73px;
-line-height: 41px;
-  width: 35%;
+line-height: 65px;
+  text-transform: lowercase;
 }
 
 .work-examples__preview-wrapper {
@@ -482,7 +501,7 @@ line-height: 16px;
 
 .work-examples__owner {
   margin-left: auto;
-  width: 57%;
+  min-width: 50%;
   background-color: #1B1D1B;
   padding: 20px;
 }
@@ -566,7 +585,6 @@ line-height: 24px;
 
 .clients__logo {
   order: 1;
-  width: 50%
 }
 
 .clients__contacts {
@@ -577,7 +595,7 @@ line-height: 24px;
 }
 
 .clients__contacts-site {
-  font-family: Jura;
+  font-family: "Jura", "Arial", sans-serif;
 font-weight: 700;
 font-size: 28px;
 line-height: 16px;
@@ -587,7 +605,7 @@ line-height: 16px;
 .clients__title {
   order: 3;
   width: 57%;
-  font-family: Jura;
+  font-family: "Jura", "Arial", sans-serif;
 font-weight: 700;
 font-size: 73px;
 line-height: 41px;
@@ -693,7 +711,7 @@ line-height: 19px;
 }
 
 .producion__features-more {
-  
+
 }
 
 .production__performers-list {
