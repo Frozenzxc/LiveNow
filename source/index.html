@@ -19,8 +19,10 @@
           <img class="page-header__logo-image" src="img/logo.svg" width="166" height="39" alt="Live Now студия продакшена">
       </a>
       <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list site-list">
+        <input type="checkbox" class="main-nav__toggle" id="main-nav__toggle"/>
+  <label class="main-nav__toggle-trigger" for="main-nav__toggle"></label>
+  <label class="main-nav__toggle-burger" for="main-nav__toggle"></label>
+           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="#">О нас</a>
             </li>
@@ -31,7 +33,6 @@
               <a class="site-list__link" href="#">Контакты</a>
             </li>
           </ul>
-        <div class="main-nav__wrapper">
           <ul class="main-nav__additional-list additional-list">
             <li class="additional-list__item">
               <a class="additional-list__link" href="#">Ссылка №1</a>
@@ -46,7 +47,6 @@
               <a class="additional-list__link" href="#">Ссылка №4</a>
             </li>
           </ul>
-        </div>
       </nav>
       </div>
     </header>

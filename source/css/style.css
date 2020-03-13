@@ -273,6 +273,97 @@ width: 100%;
   display: none;
 }
 
+.main-nav__toggle, .main-nav__toggle-trigger, .main-nav__toggle-burger {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+      transition: .2s ease;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+.main-nav__toggle-burger {
+      top: 32px;
+    right: 32px;
+    width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #1B1D1B;
+   box-shadow: -12px 0px #1B1D1B,
+     12px 0px #1B1D1B,
+     12px 12px #1B1D1B,
+     -12px -12px #1B1D1B,
+     12px -12px #1B1D1B,
+     -12px 12px #1B1D1B;
+}
+.main-nav__toggle-burger:before {
+    position: absolute;
+      width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #1B1D1B;
+    content: "";
+    top: -12px;
+    left: 0;
+}
+.main-nav__toggle-burger:after {
+    position: absolute;
+      width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #1B1D1B;
+    content: "";
+    top: 12px;
+    left: 0;
+}
+
+
+
+.main-nav__toggle:checked + .main-nav__toggle-trigger + .main-nav__toggle-burger {
+    transform: rotate(180deg);
+       box-shadow:
+     12px 12px #1B1D1B,
+     -12px -12px #1B1D1B,
+     12px -12px #1B1D1B,
+     -12px 12px #1B1D1B;
+    transition: transform .2s ease;
+}
+
+.main-nav__toggle:checked + .main-nav__toggle-trigger + .main-nav__toggle-burger:before {
+    transform: rotate(45deg) translateX(-5px);
+  display: none;
+    transition: transform .2s ease;
+}
+.main-nav__toggle:checked + .main-nav__toggle-trigger + .main-nav__toggle-burger:after {
+    transform: rotate(-45deg) translateX(-5px);
+  display: none;
+    transition: transform .2s ease;
+}
+
+.main-nav__additional-list {
+  display: none;
+    position: absolute;
+    margin: 0; 
+  padding: 0;
+  top: 50px;
+  right: 0;
+    width: 110px;
+    height: 110px;
+    background-color: tomato;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    animation: not-checked-anim .2s both;
+    transition: .2s;
+}
+.main-nav__toggle:checked + .main-nav__toggle-trigger + .main-nav__toggle-burger + .main-nav__additional-list {
+    animation: checked-anim 1s ease both;
+}
+.main-nav__toggle:checked + .main-nav__toggle-trigger ~ .main-nav__additional-list {
+    display: block;
+}
+
 .site-list {
   list-style: none;
   padding: 0;
@@ -325,10 +416,6 @@ line-height: 23px;
     padding-right: 36px;
     padding-top: 30px; } }
 */
-
-.main-nav__additional-list {
-  display: none;
-}
 
 .additional-list {
   list-style: none;
