@@ -30,6 +30,7 @@ gulp.task("css", function () {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
@@ -69,7 +70,6 @@ gulp.task("html", function () {
 
 gulp.task("compress", function() {
   return gulp.src("source/js/script.js")
-    .pipe(uglify())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"));
 });

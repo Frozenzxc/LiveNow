@@ -1,5 +1,8 @@
 .preview {
   background-color: $white;
+  background-image: url("../img/Preview.png");
+  background-repeat: no-repeat;
+  background-position: 550px 19px;
 }
 
 .preview__wrapper {
@@ -9,9 +12,6 @@
   position: relative;
   flex-wrap: wrap;
   flex-direction: column;
-  background-image: url("../img/Preview.png");
-  background-repeat: no-repeat;
-  background-position: 550px -50px;
 }
 
 .preview__name {
@@ -74,6 +74,11 @@
   background-color: $white;
   box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.4);
 
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 0, 0, 1);
+  }
+
   &::before {
     @include pseudo;
     top: 26px;
@@ -92,6 +97,16 @@
     border: 27px solid transparent;
     border-left: 48px solid $white;
   }
+}
+
+.preview__video-play-btn:hover::before,
+.preview__video-play-btn:focus::before {
+  background-color: $white;
+}
+
+.preview__video-play-btn:hover::after,
+.preview__video-play-btn:focus::after {
+  border-left-color: rgba(255, 0, 0, 1);
 }
 
 .preview__video-text {

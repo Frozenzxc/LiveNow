@@ -7,7 +7,7 @@
     <title>Live Now PRODUCTION</title>
     <link rel="preload" href="fonts/Stolzl-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Stolzl-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-        <link rel="preload" href="fonts/Jura-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Jura-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Jura-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
@@ -21,7 +21,7 @@
           <img class="page-header__logo-image" src="img/logo.svg" width="166" height="39" alt="Live Now студия продакшена">
       </a>
         <h1 class="page-header__title">Cтудия продакшена</h1>
-      <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+      <nav class="page-header__nav main-nav">
         <input type="checkbox" class="main-nav__toggle" id="main-nav__toggle"/>
   <label class="main-nav__toggle-trigger" for="main-nav__toggle"></label>
   <label class="main-nav__toggle-burger" for="main-nav__toggle"></label>
@@ -125,6 +125,7 @@ About company
           "Вникаем в особенности корпоративной культуры вашей компании и транслируем социальные ценности посредством видео"
         </p>
         <img class="work-examples__owner-photo" src="img/owner-photo.png" width="159" height="159" alt="Фото Игоря">
+        <img src="img/transparent-title.svg" class="work-examples__transparent-title" width="552" height="57" alt="Video production">
         </article>
       <ul class="work-examples__list">
         <li class="work-examples__item">
@@ -187,13 +188,12 @@ About company
         </div>
       </section>
     <section class="clients">
-      <div class="clients__wrapper container">
       <h2 class="visually-hidden">Наши клиенты</h2>
       <ul class="clients__list">
-        <li class="clients__item">
-          <div class="clients__info">
-          <h3 class="clients__title">Olympic kitchen</h3>
-            <img class="clients__logo" src="img/olimp-logo.svg" width="203" height="47">
+        <li class="clients__item clients__item--active">
+          <div class="clients__info container">
+          <h3 class="clients__title">Olympic kitchen 1</h3>
+            <img class="clients__logo" src="img/olimp-logo.svg" width="203" height="47" alt="Логотип Olympic food">
           <p class="clients__text">
             Доставка здорового питания на неделю в контейнерах
           </p>
@@ -231,6 +231,8 @@ About company
       </div>
           </div>
         <div class="clients__production production">
+          <div class="production__container container">
+            <div class="production__video-wrapper">
           <div class="production__wrapper">
           <h4 class="production__title">Рекламное видео</h4>
           <p class="production__text">Вникаем в особенности корпоративной культуры вашей компании и транслируем социальные ценности посредством видео
@@ -239,20 +241,14 @@ About company
             Узнать подробнее
           </a>
           </div>
-          <video class="production__video" width="400" height="400">
+          <video class="production__video" width="400" height="420">
           <source src="#">
         </video>
-        <picture>
-          <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
-
-          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-          <img class="production__poster" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
-        </picture>
+          <img class="production__poster" src="img/Video-overlay.png" alt="Постер видео">
         <button class="production__play-btn" type="button">Воспроизвести</button>
+          </div>
         <div class="production__info-wrapper">
+          <div class="production__features-wrapper">
           <p class="production__features">
             Вникаем
             Вникаем в особенности корпоративной культуры
@@ -262,6 +258,7 @@ About company
               Подробнее
             </a>
           </p>
+          </div>
           <ul class="production__performers-list">
             <li class="production__performers-item">
               <h4 class="production__performers-name">
@@ -284,9 +281,310 @@ About company
           </ul>
         </div>
           </div>
+        </div>
+        </li>
+        <li class="clients__item">
+          <div class="clients__info container">
+            <h3 class="clients__title">Olympic kitchen 2</h3>
+            <img class="clients__logo" src="img/olimp-logo.svg" width="203" height="47" alt="Логотип Olympic food">
+            <p class="clients__text">
+              Доставка здорового питания на неделю в контейнерах
+            </p>
+            <div class="clients__contacts">
+              <a class="clients__contacts-site" href="https://olympickitchen.ru">olympickitchen.ru</a>
+              <ul class="clients__contacts-social social">
+                <li class="social__item">
+                  <a class="social__link social__link--twitter" href="#">
+          <span class="visually-hidden">Мы в Твиттере
+          </span>
+                    <svg class="social__icon" x="0px" y="0px" width="23.494px" height="20.168px">
+                      <use xlink:href="#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="#">
+          <span class="visually-hidden">Мы в Фейсбуке
+          </span>
+                    <svg class="social__icon" x="0px" y="0px" width="14.962px" height="27.718px">
+                      <use xlink:href="#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--instagram" href="#">
+          <span class="visually-hidden">Мы в Инстаграме
+          </span>
+                    <svg class="social__icon" x="0px" y="0px" width="21.769px" height="21.334px">
+                      <use xlink:href="#icon-insta"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clients__production production">
+            <div class="production__container container">
+              <div class="production__video-wrapper">
+                <div class="production__wrapper">
+                  <h4 class="production__title">Рекламное видео</h4>
+                  <p class="production__text">Вникаем в особенности корпоративной культуры вашей компании и транслируем социальные ценности посредством видео
+                  </p>
+                  <a class="production__more" href="">
+                    Узнать подробнее
+                  </a>
+                </div>
+                <video class="production__video" width="400" height="420">
+                  <source src="#">
+                </video>
+                <img class="production__poster" src="img/Video-overlay.png" alt="Постер видео">
+                <button class="production__play-btn" type="button">Воспроизвести</button>
+              </div>
+              <div class="production__info-wrapper">
+                <div class="production__features-wrapper">
+                  <p class="production__features">
+                    Вникаем
+                    Вникаем в особенности корпоративной культуры
+                  </p>
+                  <p class="production__features-photo">
+                    <a class="producion__features-more button" href="#">
+                      Подробнее
+                    </a>
+                  </p>
+                </div>
+                <ul class="production__performers-list">
+                  <li class="production__performers-item">
+                    <h4 class="production__performers-name">
+                      Игорь Цепкин
+                    </h4>
+                    <img class="production__performers-photo" src="img/Author-photo.png" width="61" height="61">
+                    <p class="production__performers-text">
+                      Вникаем в особенности корпоративной культуры вашей компании и транслируем социальные ценности посредством видео
+                    </p>
+                  </li>
+                  <li class="production__performers-item">
+                    <h4 class="production__performers-name">
+                      Игорь Цепкин
+                    </h4>
+                    <img class="production__performers-photo" src="img/Author-photo.png" width="61" height="61">
+                    <p class="production__performers-text">
+                      Вникаем в особенности корпоративной культуры вашей компании и транслируем социальные ценности посредством видео
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="clients__item">
+          <div class="clients__info container">
+            <h3 class="clients__title">Olympic kitchen 3</h3>
+            <img class="clients__logo" src="img/olimp-logo.svg" width="203" height="47" alt="Логотип Olympic food">
+            <p class="clients__text">
+              Доставка здорового питания на неделю в контейнерах
+            </p>
+            <div class="clients__contacts">
+              <a class="clients__contacts-site" href="https://olympickitchen.ru">olympickitchen.ru</a>
+              <ul class="clients__contacts-social social">
+                <li class="social__item">
+                  <a class="social__link social__link--twitter" href="#">
+          <span class="visually-hidden">Мы в Твиттере
+          </span>
+                    <svg class="social__icon" x="0px" y="0px" width="23.494px" height="20.168px">
+                      <use xlink:href="#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="#">
+          <span class="visually-hidden">Мы в Фейсбуке
+          </span>
+                    <svg class="social__icon" x="0px" y="0px" width="14.962px" height="27.718px">
+                      <use xlink:href="#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--instagram" href="#">
+          <span class="visually-hidden">Мы в Инстаграме
+          </span>
+                    <svg class="social__icon" x="0px" y="0px" width="21.769px" height="21.334px">
+                      <use xlink:href="#icon-insta"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clients__production production">
+            <div class="production__container container">
+              <div class="production__video-wrapper">
+                <div class="production__wrapper">
+                  <h4 class="production__title">Рекламное видео</h4>
+                  <p class="production__text">Вникаем в особенности корпоративной культуры вашей компании и транслируем социальные ценности посредством видео
+                  </p>
+                  <a class="production__more" href="">
+                    Узнать подробнее
+                  </a>
+                </div>
+                <video class="production__video" width="400" height="420">
+                  <source src="#">
+                </video>
+                <img class="production__poster" src="img/Video-overlay.png" alt="Постер видео">
+                <button class="production__play-btn" type="button">Воспроизвести</button>
+              </div>
+              <div class="production__info-wrapper">
+                <div class="production__features-wrapper">
+                  <p class="production__features">
+                    Вникаем
+                    Вникаем в особенности корпоративной культуры
+                  </p>
+                  <p class="production__features-photo">
+                    <a class="producion__features-more button" href="#">
+                      Подробнее
+                    </a>
+                  </p>
+                </div>
+                <ul class="production__performers-list">
+                  <li class="production__performers-item">
+                    <h4 class="production__performers-name">
+                      Игорь Цепкин
+                    </h4>
+                    <img class="production__performers-photo" src="img/Author-photo.png" width="61" height="61">
+                    <p class="production__performers-text">
+                      Вникаем в особенности корпоративной культуры вашей компании и транслируем социальные ценности посредством видео
+                    </p>
+                  </li>
+                  <li class="production__performers-item">
+                    <h4 class="production__performers-name">
+                      Игорь Цепкин
+                    </h4>
+                    <img class="production__performers-photo" src="img/Author-photo.png" width="61" height="61">
+                    <p class="production__performers-text">
+                      Вникаем в особенности корпоративной культуры вашей компании и транслируем социальные ценности посредством видео
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="clients__item">
+          <div class="clients__info container">
+            <h3 class="clients__title">Olympic kitchen 4</h3>
+            <img class="clients__logo" src="img/olimp-logo.svg" width="203" height="47" alt="Логотип Olympic food">
+            <p class="clients__text">
+              Доставка здорового питания на неделю в контейнерах
+            </p>
+            <div class="clients__contacts">
+              <a class="clients__contacts-site" href="https://olympickitchen.ru">olympickitchen.ru</a>
+              <ul class="clients__contacts-social social">
+                <li class="social__item">
+                  <a class="social__link social__link--twitter" href="#">
+          <span class="visually-hidden">Мы в Твиттере
+          </span>
+                    <svg class="social__icon" x="0px" y="0px" width="23.494px" height="20.168px">
+                      <use xlink:href="#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="#">
+          <span class="visually-hidden">Мы в Фейсбуке
+          </span>
+                    <svg class="social__icon" x="0px" y="0px" width="14.962px" height="27.718px">
+                      <use xlink:href="#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--instagram" href="#">
+          <span class="visually-hidden">Мы в Инстаграме
+          </span>
+                    <svg class="social__icon" x="0px" y="0px" width="21.769px" height="21.334px">
+                      <use xlink:href="#icon-insta"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clients__production production">
+            <div class="production__container container">
+              <div class="production__video-wrapper">
+                <div class="production__wrapper">
+                  <h4 class="production__title">Рекламное видео</h4>
+                  <p class="production__text">Вникаем в особенности корпоративной культуры вашей компании и транслируем социальные ценности посредством видео
+                  </p>
+                  <a class="production__more" href="">
+                    Узнать подробнее
+                  </a>
+                </div>
+                <video class="production__video" width="400" height="420">
+                  <source src="#">
+                </video>
+                <img class="production__poster" src="img/Video-overlay.png" alt="Постер видео">
+                <button class="production__play-btn" type="button">Воспроизвести</button>
+              </div>
+              <div class="production__info-wrapper">
+                <div class="production__features-wrapper">
+                  <p class="production__features">
+                    Вникаем
+                    Вникаем в особенности корпоративной культуры
+                  </p>
+                  <p class="production__features-photo">
+                    <a class="producion__features-more button" href="#">
+                      Подробнее
+                    </a>
+                  </p>
+                </div>
+                <ul class="production__performers-list">
+                  <li class="production__performers-item">
+                    <h4 class="production__performers-name">
+                      Игорь Цепкин
+                    </h4>
+                    <img class="production__performers-photo" src="img/Author-photo.png" width="61" height="61">
+                    <p class="production__performers-text">
+                      Вникаем в особенности корпоративной культуры вашей компании и транслируем социальные ценности посредством видео
+                    </p>
+                  </li>
+                  <li class="production__performers-item">
+                    <h4 class="production__performers-name">
+                      Игорь Цепкин
+                    </h4>
+                    <img class="production__performers-photo" src="img/Author-photo.png" width="61" height="61">
+                    <p class="production__performers-text">
+                      Вникаем в особенности корпоративной культуры вашей компании и транслируем социальные ценности посредством видео
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </li>
       </ul>
-      </div>
+      <ul class="clients__slider-counter">
+        <li class="clients__counter-item">
+          <button class="clients__counter-btn clients__counter-btn--active" data-id="0" type="button" aria-label="Выбрать первый слайд">
+            Слайд №1
+          </button>
+        </li>
+        <li class="clients__counter-item">
+          <button class="clients__counter-btn" data-id="1" type="button" aria-label="Выбрать второй слайд">
+            Слайд №2
+          </button>
+        </li>
+        <li class="clients__counter-item">
+          <button class="clients__counter-btn" data-id="2" type="button" aria-label="Выбрать третий слайд">
+            Слайд №3
+          </button>
+        </li>
+        <li class="clients__counter-item">
+        <button class="clients__counter-btn" data-id="3" type="button" aria-label="Выбрать четвертый слайд">
+          Слайд №4
+        </button>
+      </li>
+      </ul>
     </section>
     <section class="performers">
       <div class="performers__wrapper container">
@@ -294,7 +592,106 @@ About company
         People company
         </h2>
         <ul class="performers__list">
-          <li class="performers__item">
+          <li class="performers__item performers__item--active" data-id="0">
+            <h3 class="performers__name">
+              Елена Шанин
+            </h3>
+            <p class="performers__position">
+              Фото-видеограф
+            </p>
+            <p class="performers__photo">
+              <img class="performers__photo-image" src="img/staff-photo-1.png" width="519" height="757">
+            </p>
+          </li>
+          <li class="performers__item" data-id="1">
+            <h3 class="performers__name">
+              Елена Шанин
+            </h3>
+            <p class="performers__position">
+              Фото-видеограф
+            </p>
+            <p class="performers__photo">
+              <img class="performers__photo-image" src="img/staff-photo-1.png" width="519" height="757">
+            </p>
+          </li>
+          <li class="performers__item" data-id="2">
+            <h3 class="performers__name">
+              Елена Шанин
+            </h3>
+            <p class="performers__position">
+              Фото-видеограф
+            </p>
+            <p class="performers__photo">
+              <img class="performers__photo-image" src="img/staff-photo-1.png" width="519" height="757">
+            </p>
+          </li>
+          <li class="performers__item" data-id="3">
+            <h3 class="performers__name">
+              Елена Шанин
+            </h3>
+            <p class="performers__position">
+              Фото-видеограф
+            </p>
+            <p class="performers__photo">
+              <img class="performers__photo-image" src="img/staff-photo-1.png" width="519" height="757">
+            </p>
+          </li>
+          <li class="performers__item" data-id="4">
+            <h3 class="performers__name">
+              Елена Шанин
+            </h3>
+            <p class="performers__position">
+              Фото-видеограф
+            </p>
+            <p class="performers__photo">
+              <img class="performers__photo-image" src="img/staff-photo-1.png" width="519" height="757">
+            </p>
+          </li>
+          <li class="performers__item" data-id="5">
+            <h3 class="performers__name">
+              Елена Шанин
+            </h3>
+            <p class="performers__position">
+              Фото-видеограф
+            </p>
+            <p class="performers__photo">
+              <img class="performers__photo-image" src="img/staff-photo-1.png" width="519" height="757">
+            </p>
+          </li>
+          <li class="performers__item" data-id="6">
+            <h3 class="performers__name">
+              Елена Шанин
+            </h3>
+            <p class="performers__position">
+              Фото-видеограф
+            </p>
+            <p class="performers__photo">
+              <img class="performers__photo-image" src="img/staff-photo-1.png" width="519" height="757">
+            </p>
+          </li>
+          <li class="performers__item" data-id="7">
+            <h3 class="performers__name">
+              Елена Шанин
+            </h3>
+            <p class="performers__position">
+              Фото-видеограф
+            </p>
+            <p class="performers__photo">
+              <img class="performers__photo-image" src="img/staff-photo-1.png" width="519" height="757">
+            </p>
+          </li>
+          <li class="performers__item" data-id="8">
+            <h3 class="performers__name">
+              Елена Шанин
+            </h3>
+            <p class="performers__position">
+              Фото-видеограф
+            </p>
+            <p class="performers__photo">
+              <img class="performers__photo-image" src="img/staff-photo-1.png" width="519" height="757">
+            </p>
+          </li>
+          <li class="performers__item" data-id="9">
             <h3 class="performers__name">
               Елена Шанин
             </h3>
@@ -314,6 +711,42 @@ About company
       </div>
     </section>
     </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper container">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="img/footer-logo.svg" width="166" height="39" alt="Live Now студия продакшена">
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">
+          <span class="visually-hidden">Мы в Инстаграме
+          </span>
+              <svg class="social__icon" x="0px" y="0px" width="21.769px" height="21.334px">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+          <span class="visually-hidden">Мы в Фейсбуке
+          </span>
+              <svg class="social__icon" x="0px" y="0px" width="14.962px" height="27.718px">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+          <span class="visually-hidden">Мы в Твиттере
+          </span>
+              <svg class="social__icon" x="0px" y="0px" width="23.494px" height="20.168px">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   <script src="js/script.js"></script>
   </body>
 </html>

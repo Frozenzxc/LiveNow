@@ -1,4 +1,5 @@
 .main-nav {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   padding-right: 90px;
@@ -14,8 +15,8 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 28px;
-  right: 136px;
+  top: 17px;
+  right: 17px;
   transition: 0.2s ease;
   cursor: pointer;
   z-index: 1;
@@ -23,8 +24,8 @@
 
 
 .main-nav__toggle-burger {
-  top: 40px;
-  right: 148px;
+  top: 29px;
+  right: 28px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -84,16 +85,7 @@
 
 .main-nav__additional-list {
   display: none;
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  top: 50px;
-  right: 0;
-  width: 110px;
-  height: 110px;
-  background-color: tomato;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
-  animation: not-checked-anim 0.2s both;
+  animation: not-checked-anim 1s both;
   transition: 0.2s;
 }
 

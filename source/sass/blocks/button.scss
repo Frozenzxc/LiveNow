@@ -41,12 +41,14 @@
   }
 }
 
-.button--arrow:hover .button--arrow::before {
+.button--arrow:hover::before,
+.button--arrow:focus::before,
+.button--arrow:active::before {
   background-color: $black;
 }
 
-/*.button--arrow:hover .button--arrow::after,
-.button--arrow:focus .button--arrow::after,
-.button--arrow:active .button--arrow::after {
+.button--arrow:hover::after,
+.button--arrow:focus::after,
+.button--arrow:active::after {
   border-color: $black;
-}*/
+}
