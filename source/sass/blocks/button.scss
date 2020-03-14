@@ -1,19 +1,52 @@
 .button {
-  @include font(17px, 20px, #444444);
+  position: relative;
   display: block;
-  padding: 14px 0;
-  text-align: center;
-  text-transform: uppercase;
-  border: 2px solid #444444;
+  padding: 14px 24px;
+  background-color: $black;
+  font-size: 19px;
+  line-height: 15px;
+  color: $white;
+  text-transform: lowercase;
 
   &:hover,
-  &:focus {
-    background-color: #444444;
-    color: rgba(255, 255, 255, 1);
-  }
-
+  &:focus,
   &:active {
-    background-color: #444444;
-    color: rgba(255, 255, 255, 0.3);
+    background-color: $white;
+    color: $black;
   }
 }
+
+.button--arrow {
+  padding-right: 48px;
+
+  &::before {
+    @include pseudo;
+    top: 21px;
+    right: 25px;
+    width: 17px;
+    height: 2px;
+    background: $white;
+  }
+
+  &::after {
+    @include pseudo;
+    top: 17px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid $white;
+    border-top: none;
+    border-left: none;
+    transform: rotate(-45deg);
+  }
+}
+
+.button--arrow:hover .button--arrow::before {
+  background-color: $black;
+}
+
+/*.button--arrow:hover .button--arrow::after,
+.button--arrow:focus .button--arrow::after,
+.button--arrow:active .button--arrow::after {
+  border-color: $black;
+}*/

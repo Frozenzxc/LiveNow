@@ -1,120 +1,65 @@
 .advantages {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 6px;
+  background-color: $black;
+}
+
+.advantages__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .advantages__title {
-  @include font(25px, 30px);
-  margin-bottom: 30px;
+  margin: 0;
+  padding-top: 52px;
+  padding-left: 18px;
+  width: 22%;
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 300;
+  text-transform: lowercase;
+  color: $white;
+  border: 5px solid rgba(255, 0, 0, 1);
+  border-bottom-color: rgba(255, 0, 0, 0.5);
+  border-right-color: rgba(255, 0, 0, 0.5);
 }
 
 .advantages__list {
   @include list-reset;
+  width: 70%;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .advantages__item {
-  @include font(17px, 20px);
-  padding-top: 54px;
-  margin-bottom: 30px;
+  width: 25%;
+}
 
-  &:last-child {
-    margin-bottom: 0;
+.advantages__item-title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  color: $white;
+
+  &::after {
+    @include pseudo;
+
+    bottom: -20px;
+    left: 0;
+    width: 158px;
+    height: 5px;
+    background: linear-gradient(to right, rgba(255, 0, 0, 1) 70%, rgba(255, 0, 0, 0.5)  30%);
   }
 }
 
-.advantages__item--flower {
-  background: url("../img/icon-feature-flower.svg") no-repeat;
-  background-position: 8px 0;
-}
-
-.advantages__item--money {
-  background: url("../img/icon-feature-money.svg") no-repeat;
-  background-position: 0 0;
-}
-
-.advantages__item--heart {
-  background: url("../img/icon-feature-heart.svg") no-repeat;
-  background-position: 7px 4px;
-}
-
-.advantages__item--ball {
-  background: url("../img/icon-feature-ball.svg") no-repeat;
-  background-position: 3px 0;
-}
-
-.advantages__item--rocket {
-  background: url("../img/icon-feature-rocket.svg") no-repeat;
-  background-position: -6px 0;
-}
-
-.advantages__item--gift {
-  background: url("../img/icon-feature-gift.svg") no-repeat;
-  background-position: 3px 0;
-}
-
-@media (min-width: 768px) {
-  .advantages {
-    padding-top: 17px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 55px;
-  }
-
-  .advantages__title {
-    @include font(43px, 50px);
-    margin-bottom: 50px;
-  }
-
-  .advantages__list {
-    flex-direction: row;
-  }
-
-  .advantages__item {
-    @include font(20px, 22px);
-    padding-right: 40px;
-    width: 50%;
-    margin-bottom: 58px;
-  }
-
-  .advantages__item--flower {
-    order: 1;
-  }
-
-  .advantages__item--money {
-    order: 3;
-  }
-
-  .advantages__item--ball {
-    order: 2;
-  }
-
-  .advantages__item--rocket {
-    order: 4;
-  }
-
-  .advantages__item--heart {
-    order: 5;
-    margin-bottom: 0;
-  }
-
-  .advantages__item--gift {
-    order: 6;
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: 1150px) {
-  .advantages {
-    padding-left: 225px;
-    padding-right: 225px;
-  }
-
-  .advantages__title {
-    @include font(53px, 57px);
-    margin-top: 45px;
-  }
+.advantages__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: lowercase;
+  color: $white;
 }
