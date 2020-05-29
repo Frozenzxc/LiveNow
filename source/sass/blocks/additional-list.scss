@@ -33,3 +33,10 @@
   padding: 20px 10px;
   color: inherit;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .additional-list {
+    top: -20px;
+    right: 0;
+  }
+}

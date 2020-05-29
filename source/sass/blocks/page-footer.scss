@@ -35,3 +35,9 @@
   padding: 14px 40px 0 40px;
 }
 
+@media (min-width: 768px) and (max-width: 1150px) {
+  .page-footer__wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}

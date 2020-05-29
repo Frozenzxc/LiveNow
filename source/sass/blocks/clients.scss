@@ -121,3 +121,14 @@
 .clients__counter-btn--active {
   background-color: $black;
 }
+
+@media (min-width: 768px) and (max-width: 1150px) {
+  .clients__title {
+    font-size: 45px;
+    line-height: 34px;
+  }
+
+  .clients__text {
+    width: 25%;
+  }
+}

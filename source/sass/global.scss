@@ -40,3 +40,19 @@ img {
   padding-left: 120px;
   padding-right: 120px;
 }
+
+@media (min-width: 768px) and (max-width: 1150px) {
+  .container {
+    width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .container {
+    width: 320px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

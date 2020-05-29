@@ -164,3 +164,33 @@
 .work-examples__item-link {
   display: none;
 }
+
+@media (min-width: 768px) and (max-width: 1150px) {
+  .work-examples__wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .work-examples__preview-wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .work-examples__owner {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .work-examples__item {
+    padding: 50px 10px 0;
+  }
+
+  .work-examples__item-title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .work-examples__item-title::before {
+    width: 100%;
+  }
+}

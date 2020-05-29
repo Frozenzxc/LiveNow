@@ -25,3 +25,10 @@
   padding: 20px 10px;
   color: inherit;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .site-list {
+    font-size: 15px;
+    justify-content: space-between;
+  }
+}

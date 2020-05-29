@@ -193,3 +193,21 @@
   top: 20px;
   left: 45px;
 }
+
+@media (min-width: 768px) and (max-width: 1150px) {
+  .production__container {
+    background: linear-gradient(to bottom,#fff 50%,#1b1d1b 50%);
+  }
+
+  .production__video-wrapper {
+    width: 100%;
+  }
+
+  .production__info-wrapper {
+    width: 100%;
+  }
+
+  .production__performers-item {
+    height: 50%;
+  }
+}

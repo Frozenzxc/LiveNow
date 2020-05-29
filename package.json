@@ -1,8 +1,8 @@
 {
-  "name": "mishka-17",
+  "name": "LiveNow Production",
   "version": "17.0.0",
   "private": true,
-  "description": "Личный проект «Мишка» от HTML Academy",
+  "description": "LiveNow Production",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",

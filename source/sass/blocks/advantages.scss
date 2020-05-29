@@ -8,6 +8,7 @@
   padding-top: 36px;
   padding-bottom: 36px;
   background-color: $black;
+  flex-wrap: wrap;
 }
 
 .advantages__title {
@@ -63,4 +64,26 @@
   line-height: 16px;
   text-transform: lowercase;
   color: $white;
+}
+
+@media (min-width: 768px) and (max-width: 1150px) {
+  .advantages__title {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .advantages__list {
+    width: 100%;
+  }
+
+  .advantages__item {
+    width: 30%;
+  }
+
+  .advantages__item-title::after {
+    width: 100%;
+  }
 }

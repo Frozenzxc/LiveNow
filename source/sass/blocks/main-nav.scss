@@ -100,3 +100,21 @@
 .main-nav__list {
   margin-left: 150px;
 }
+
+@media (min-width: 768px) and (max-width: 1150px) {
+  .main-nav {
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-nav__toggle-burger {
+    top: -46px;
+    right: 12px;
+  }
+
+  .main-nav__toggle-trigger {
+    top: -58px;
+    right: 0;
+  }
+}
