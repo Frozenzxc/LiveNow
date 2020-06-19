@@ -115,3 +115,20 @@
     left: initial;
   }
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .performers__title {
+    margin-bottom: 10px;
+  }
+
+  .performers__name {
+    margin-bottom: 30px;
+    max-width: 100%;
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .performers__photo {
+    width: 100%;
+  }
+}

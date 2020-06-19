@@ -108,6 +108,10 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
+  .main-nav {
+    padding-right: 0;
+  }
+
   .main-nav__toggle-burger {
     top: -46px;
     right: 12px;

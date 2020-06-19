@@ -88,3 +88,30 @@
     width: 100%;
   }
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .advantages-wrapper {
+    flex-direction: column;
+  }
+
+  .advantages__title {
+    margin-bottom: 30px;
+  }
+  
+  .advantages__list {
+    flex-direction: column;
+  }
+
+  .advantages__item {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .advantages__item-title {
+    margin-bottom: 20px;
+  }
+
+  .advantages__item-title::after {
+    bottom: 0;
+  }
+}
